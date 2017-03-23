@@ -1,0 +1,74 @@
+.shop{
+	width: 10rem;
+}
+.shop .top{
+	height: 1.424242rem;
+	display: flex;
+	align-items: center;
+	border-bottom: 0.030303rem solid #eeeeee; 
+}
+.shop .top img{
+	width: 0.60606rem;
+	height: 0.60606rem;
+	margin: 0 0.454545rem;
+}
+.shop .top span{
+	font-size: 0.484848rem;
+	display: block;
+	width: 7.515151rem;
+}
+.shop .main .main_top{
+	height: 2.212121rem;
+	display: flex;
+	align-items: center;
+	margin: 0 0 0 0.545454rem;
+}
+.shop .main .main_top .img1{
+	width: 2.727272rem;
+	height: 1.424242rem;
+	border: 0.030303rem solid #eeeeee; 
+}
+.shop .main .main_top .img2{
+	width: 0.60606rem;
+	height: 0.60606rem;
+	border: 0.030303rem solid #eeeeee;
+	border-radius: 50%;
+	padding: 0.090909rem;
+}
+.shop .main .main_top div{
+	margin-left: 0.30303rem;
+}
+.shop .main .main_top div p:nth-of-type(2){
+	margin-top: 0.30303rem;
+	background: #ff7300;
+	text-align: center;
+	color: white;
+}
+.shop .main .main_top figure{
+	margin-left: 2.424242rem;
+	text-align: center;
+}
+.shop .main .main_center{
+	height: 1.818181rem;
+}
+.shop .main .main_center p{
+	margin-top: 0.30303rem;
+}
+.shop .main .main_center span{
+	border: 0.030303rem solid #c95e70;
+	color: #c95e70;
+	padding: 0 0.151515rem;
+	margin: 0 0.363636rem 0 0.545454rem;
+}
+.shop .rank_list{
+	width: 10rem;
+	display: flex;
+	margin-bottom: 1.212121rem;
+}
+.shop .rank_list li{
+	padding: 0 0.757575rem;
+	border-right: 0.030303rem solid #eeeeee;
+}
+.shop .rank_list li:last-of-type{
+	border-right: none;
+}

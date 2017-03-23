@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="./straight/css/substr.css" />
+<link rel="stylesheet" href="./straight/css/shop.css">
+<div class="shop">
+	<div class="top">
+		<img  onclick="window.history.back()"  src="./straight/img/back_arrow.jpg" alt="">
+		<span>genaduo女神专场特卖折扣</span>
+		<img src="./straight/img/more.png" alt="">
+	</div>
+	<div class="main">
+		<div class="main_top">
+			<img class="img1" src="./straight/img/brand.png" alt="">
+			<div>
+				<p>sprite小店</p>
+				<p>店铺发货</p>
+			</div>
+			<figure>
+				<img class="img2" src="./straight/img/collect.png" alt="">
+				<figcaption>
+					<p>收藏店铺</p>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="main_center">
+			<p>
+				<span>满赠</span>
+				满1元即赠69元优惠券，限赠一次
+			</p>
+			<p>
+				<span>满件减</span>
+				满2件减10元，满3件减15元
+			</p>
+		</div>
+	</div>
+	<ul class="rank_list">
+		<li>综合</li>
+		<li>人气</li>
+		<li>销量</li>
+		<li>仅看有货</li>
+	</ul>
+</div>
+<div class="sub01">
+	<ul>
+		<li ng-repeat="item in data">
+			<a ui-sref="substr" ng-click="showGoods()">
+				<figure>
+					<img src="{{ item.pic_url }}" />
+					<figcaption>
+						<div>
+							<h3>￥{{ item.cprice }}<s>￥{{ item.oprice }}</s></h3>
+							<p>上新</p>
+						</div>
+						<div class="info">
+							<span>直发</span>
+							<p>{{ item.title }}</p>
+						</div>
+					</figcaption>
+				</figure>
+			</a>
+		</li>
+	</ul>
+</div>
+	
+	
+	

@@ -1,0 +1,164 @@
+<div class="shoes">
+    <!-- banner -->
+    <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" ng-repeat="item in shCtrl.dswiper"><img ng-src="{{item.pic}}"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- 广告模块 -->
+    <div class="ad_bar">
+        <ul>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58c0b0c6ad0a49445c8b457d_200x212.png" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58c0b0c6ad0a49445c8b457d_200x212.png" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58c0b0c6ad0a49445c8b457d_200x212.png" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58c0b0c6ad0a49445c8b457d_200x212.png" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58c0b0c6ad0a49445c8b457d_200x212.png" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58c0b0c6ad0a49445c8b457d_200x212.png" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58c0b0c6ad0a49445c8b457d_200x212.png" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58c0b0c6ad0a49445c8b457d_200x212.png" alt="" />
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 购物广告模块 -->
+    <div class="ad_shop_list">
+        <ul>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58c7ac6ca43d1f391f7d6c54_375x456.png" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58ca635da43d1f515d148012_375x228.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58cfb833ad0a49d12a8b45bb_375x228.jpg" alt="" />
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 鞋子模块 -->
+    <div class="shop_item">
+        <ul>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58cb9fbcad0a49f18c8b4589_375x180.png" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58cb9fbcad0a49f18c8b4589_375x180.png" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58cb9fbcad0a49f18c8b4589_375x180.png" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58cb9fbcad0a49f18c8b4589_375x180.png" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58cb9fbcad0a49f18c8b4589_375x180.png" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58cb9fbcad0a49f18c8b4589_375x180.png" alt="" />
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 商品更新时间 -->
+    <div class="update_time">
+        <img src="./home/img/58c20db7a43d1f63427015d8_750x96.jpg" alt="" />
+    </div>
+    <!-- 商品详情列表 -->
+    <div class="goods_list">
+        <ul>
+            <li ng-repeat='item in shCtrl.data'>
+                <a href="###">
+                    <img ng-src="{{item.pic_url}}" alt="" />
+                </a>
+                <div class="goods_info">
+                    <span class="price_info">满2件减12元</span>
+                    <span class="time_info">{{item.residue}}</span>
+                    <h3>{{item.title}}</h3>
+                    <span class='goods_icon'></span>
+                </div>
+            </li>
+            <!--<li>
+                <a href="###">
+                    <img src="./home/img/58c510f4a43d1f0e53533ff4_800x800.jpg" alt="" />
+                    <div class="goods_info">
+                        <span class="price_info">满2件减12元</span>
+                        <span class="time_info">上新</span>
+                        <h3>淑女丽丝</h3>
+                        <span class='goods_icon'></span>
+                    </div>
+                 </a>
+            </li>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58c510f4a43d1f0e53533ff4_800x800.jpg" alt="" />
+                    <div class="goods_info">
+                        <span class="price_info">满2件减12元</span>
+                        <span class="time_info">上新</span>
+                        <h3>淑女丽丝</h3>
+                        <span class='goods_icon'></span>
+                    </div>
+                 </a>
+            </li>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58c510f4a43d1f0e53533ff4_800x800.jpg" alt="" />
+                    <div class="goods_info">
+                        <span class="price_info">满2件减12元</span>
+                        <span class="time_info">上新</span>
+                        <h3>淑女丽丝</h3>
+                        <span class='goods_icon'></span>
+                    </div>
+                 </a>
+            </li>-->
+        </ul>
+    </div>
+</div>

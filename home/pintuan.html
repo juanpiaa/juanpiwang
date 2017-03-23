@@ -1,0 +1,106 @@
+<div class="home">
+    
+    <!-- 头部 -->
+    <div class="header">
+        <h1>卷皮</h1>
+        <img src="./home/img/btn-sign.png" alt="" />
+    </div>
+    <!-- 导航 -->
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="###" class="active">上新</a>
+            </li>
+            <li>
+                <a href="###">美食</a>
+            </li>
+            <li>
+                <a href="###">居家</a>
+            </li>
+            <li>
+                <a class="jjsm"href="###">家电数码</a>
+            </li>
+            <li >
+                <a href="###">母婴</a>
+            </li>
+            <li>
+                <a href="###">美妆</a>
+            </li>
+            <li>
+                <a href="###">服饰</a>
+            </li>
+        </ul>
+    </div>
+    <!-- banner -->
+    <div class="banner">
+        <!-- <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" ng-repeat="item in shCtrl.dswiper"><img ng-src="{{item.pic}}"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div> -->
+        <img src="./home/img/shangxin_banner.png" alt="" />
+    </div>
+   <!-- 广告模块 -->
+    <div class="ad_bar">
+        <ul>
+            <li>
+                <a ui-sref="activity.crazy">
+                    <img src="./home/img/58c27b96ad0a49b5998b4571_80x80.png" alt="" />
+                    <p>9.9元包邮</p>
+                </a>
+            </li>
+            <li>
+                <a ui-sref="freepost.post">
+                    <img src="./home/img/58c27b9aad0a49f2998b456d_80x80.png" alt="" />
+                    <p>每日抽奖</p>
+                </a>
+            </li>
+            <li>
+                <a ui-sref="shoppin.pintuan">
+                    <img src="./home/img/58c27b9ead0a49fd998b4573_80x80.png" alt="" />
+                    <p>每日精选</p>
+                </a>
+            </li>
+            <li>
+                <a ui-sref="goonline.online">
+                    <img src="./home/img/58c27ca2a43d1f3e154f7b42_80x80.png" alt="" />
+                    <p>拼团试用</p>
+                </a>
+            </li>
+            <li>
+                <a ui-sref="goonline.online">
+                    <img src="./home/img/58c27ba2a43d1f3d2e712711_80x80.png" alt="" />
+                    <p>即时抢购</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="food_item">
+        <ul>
+            <li>
+                <img src="./home/img/58d1d9e7a43d1f294e61406e_250x288.png" alt="" />
+            </li>
+            <li>
+                <img src="./home/img/58c3585cad0a4913998b459b_250x288.png" alt="" />
+            </li>
+            <li>
+                <img src="./home/img/58d1d9bfad0a49e4168b4573_250x288.png" alt="" />
+            </li>
+        </ul>
+    </div>
+    <div class="products_item" ng-repeat='x in data'>
+    	<a ui-sref="substr" ng-click="addGoods()">
+	        <div class="products_item_pic">
+	            <img ng-src="{{x.pgpicurl}}"/>
+	        </div>
+	        <div class="products_info">
+	            <h3>{{x.title}}</h3>
+	            <span class='team'>2人团</span>
+	            <span class='new_price'>￥{{x.cprice}}</span>
+	            <s class='old_price'>￥{{x.oprice}}</s>
+	            <button>去开团</button>
+	        </div>
+        </a>
+    </div>
+</div>

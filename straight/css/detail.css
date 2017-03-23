@@ -1,0 +1,134 @@
+.detail .main{
+	position: relative;
+	height: 5rem;
+	width: 10rem;
+	height: 13.090909rem;
+	background: white;
+	border-bottom: 0.009303rem solid #ababab;
+	overflow-y: scroll;
+}
+.detail .main img{
+	width: 100%;
+	margin-bottom: 0.30303rem;
+}
+.detail .main .back{
+	width: 0.90909rem;
+	top: 0.454545rem;
+	left: 0.454545rem;
+	position: absolute;
+}
+.detail .main h2{
+	margin-left: 0.363636rem;
+	color: #515151;
+}
+.detail .main .price_one{
+	display: flex;
+	height: 0.60606rem;
+	margin-left: 0.757575rem;
+}
+.detail .main .price_one h4{
+	font-size: 0.484848rem;
+	font-weight: 500;
+	color: red;
+}
+.detail .main .price_one del{
+	-webkit-transform:scale(0.8);display:inline-block;
+	font-size: 0.30303rem;
+	margin: -0.21212rem 0.041818rem 0 0.163636rem;
+	color: #ababab;
+}
+.detail .main .price_one p{
+	-webkit-transform:scale(0.8);display:inline-block;
+	width: 0.90909rem;
+	margin-top: 0.090909rem;
+	height: 0.463636rem;
+	line-height: 0.463636rem;
+	text-align: center;
+	font-size: 0.30303rem;
+	background: red;
+	color: white;
+}
+.detail .main .time{
+	margin: 0.203636rem 0.242424rem 0 0.363636rem;
+	line-height: 0.454545rem;
+	color: #ababab;
+}
+.detail .main .time img{
+	margin-top: 0.151515rem;
+	width: 0.363636rem;
+}
+.detail .cell{
+	width: 9.090909rem;
+	height: 2.272727rem;
+	margin: 0 auto;
+	border-bottom: 0.009303rem solid #ababab;
+}
+.detail .cell p:nth-of-type(1){
+	padding-top: 0.454545rem;
+	margin-bottom: 0.272727rem;
+}
+.detail .cell p:nth-of-type(1) span{
+	display: inline-block;
+	color: red;
+	border: 0.030303rem solid red;
+	height: 0.424242rem;
+	width: 1.060606rem;
+	text-align: center;
+	line-height: 0.424242rem;
+	margin: 0 0.181818rem;
+}
+.detail .cell p:nth-of-type(2){
+	margin-left: 0.90909rem;
+}
+.detail .cell p:nth-of-type(2) span{
+	display: inline-block;
+	color: red;
+	border: 0.030303rem solid red;
+	height: 0.424242rem;
+	
+	text-align: center;
+	line-height: 0.424242rem;
+	margin-right: 0.181818rem;
+}
+.detail ul{
+	width: 100%;
+	display: flex;
+	height: 1.072727rem;
+	line-height: 1.072727rem;
+	border-bottom: 0.009303rem solid #ababab;
+}
+.detail ul img{
+	width: 0.363636rem;
+	margin-left: 0.30303rem;
+}
+.detail ul span{
+	-webkit-transform:scale(0.8);display:inline-block;
+	font-size: 0.363636rem;
+}
+.detail .foot{
+	width:10rem;
+	position: fixed;
+	display: flex;
+	bottom: 0;
+	left: 0;
+	height: 1.515151rem;
+}
+.detail .foot a{
+	display: block;
+	text-align: center;
+	padding-top: 0.30303rem;
+	width: 3.9rem;
+	background: #ffffff;
+}
+.detail .foot img{
+	width: 0.60606rem;
+}
+.detail .foot a span{
+	color: #646364;
+}
+.detail .foot button{
+	width: 6.1rem;
+	height: 1.515151rem;
+	background: #ff464e;
+	color: white;
+}

@@ -1,0 +1,56 @@
+.sub01{
+	padding: 0;
+	margin: 0.151515rem 0 0 0;
+	
+}
+.sub01 ul li{
+	width: 4.94969rem;
+	height: 6.93636rem;
+	background: white;
+}
+.sub01 ul li:nth-of-type(odd){
+	float: left;
+}
+.sub01 ul li:nth-of-type(even){
+	float: right;
+}
+.sub01 li a div:nth-of-type(1){
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.sub01 li a div:nth-of-type(1) p{
+	color: #c0c0c0;
+}
+.sub01 li a figcaption{
+	padding: 0;
+	margin: 0;
+	width: 4.696969rem;
+}
+.sub01 li a img{
+	width: 100%;
+}
+.sub01 li a h3{
+	font-size: 0.453636rem;
+	color: red;
+}
+.sub01 li a h3 s{
+	-webkit-transform:scale(0.8);display:inline-block;
+	font-size: 0.242424rem;
+	color: #717171;
+}
+.sub01 li a .info{
+	width:100%;
+	-webkit-transform:scale(0.9);
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	color: black;
+	display: flex;
+}
+.sub01 li a .info span{
+	color: red;
+	padding: 0 0.151515rem;
+	border: 0.015151rem solid red;
+	margin-right: 0.30303rem;
+}

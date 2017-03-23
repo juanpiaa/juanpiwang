@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+	</head>
+	<body ng-app="myApp">
+		<div id="back_top">
+			<a href="javascript:;" id="back">
+				<img src="comimg/back-top.png" />
+			</a>
+		</div>
+		<div ui-view class="view" ng-class="{true : 'class1', false : 'class2'}[rootIsFooterShow]">
+			
+		</div>
+		
+		<div class="footer" ng-show="rootIsFooterShow">
+			<ul>
+				<li>
+					<a ui-sref="home">
+						<img src="comimg/57bbb0bb151ad170288b45ad_72x72.png" />
+						<p>今日折扣</p>
+					</a>
+				</li>
+				<li>
+					<a ui-sref="straight">
+						<img src="comimg/58aebd7d151ad103118b4582_72x72.png" />
+						<p>直发仓</p>
+					</a>
+				</li>
+				<li>
+					<a ui-sref="world">
+						<img src="comimg/57d8ca80151ad15b618b4584_72x72.png" />
+						<p>全球购</p>
+					</a>
+				</li>
+				<li>
+					<a ui-sref="cart">
+						<img src="comimg/57bbb0f0151ad15a2a8b458f_72x72.png" />
+						<p>购物车</p>
+					</a>
+				</li>
+				<li>
+					<a ui-sref="mine">
+						<img src="comimg/57d8ca99151ad109618b4584_72x72.png" />
+						<p>我的卷皮</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript" src="lib/jquery-3.1.1.min.js" ></script>
+	<script type="text/javascript" src="lib/swiper-3.3.1.min.js" ></script>
+	<script type="text/javascript" src="lib/flexible.js" ></script>
+	<script type="text/javascript" src="lib/angular.min.js" ></script>
+	<script type="text/javascript" src="lib/angular-css.js" ></script>
+	<script type="text/javascript" src="lib/angular-ui-router.js" ></script>
+	<script type="text/javascript" src="app.js" ></script>
+	<script type="text/javascript" src="js/service.js" ></script>
+	<script type="text/javascript" src="js/factorys.js" ></script>
+	<script type="text/javascript" src="home/js/home.js" ></script>
+	<script type="text/javascript" src="straight/js/straight.js" ></script>
+	<script type="text/javascript" src="cart/js/cart.js" ></script>
+	<script type="text/javascript" src="world/js/world.js" ></script>
+	<script type="text/javascript" src="mine/js/mine.js" ></script>
+	<script type="text/javascript" src="js/index.js" ></script>
+</html>
