@@ -40,6 +40,7 @@ app.controller('StrCtrl', ['$css', 'strSer', 'strFac','$scope', '$rootScope', '$
 		var img;
 		var flyer;
 		$scope.addsomeGoods = function(){
+			
 			cartSer.addgoodss($scope.datas);
 			img = $('.btn').parent().parent().children().eq(0).children().eq(1).children().eq(2).attr('src');
 			flyer = $('<img class="flyer-img" style="width:2.875rem" src="' + img + '">'); //抛物体对象   

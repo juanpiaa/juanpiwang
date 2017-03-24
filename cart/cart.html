@@ -37,11 +37,15 @@
 	
 	<div id="second">
 		
-		  <div id="time"><span>请在(11:23)内完成付款，超时订单将自动取消</span></div>   
+		  <div id="time">
+		  	
+		  	<span>请在<span ng-model="h">{{h}}:</span><span ng-model="m">{{m}}:</span><span ng-model="s">{{s}}</span>内完成付款，超时订单将自动取消</span>
+		  	
+		  </div>   
 		  
 		  <div id="main1">
 		  	 
-		  	  	  <p id="p1"><span>满减折</span><span>已满1件，已享8.8折 再凑一件 水水水水</span></p> 
+		  	  	  <p id="p1"><span>满减折</span><span>已满1件，已享8.8折 再凑一件 更大优惠</span></p> 
 		  	  	    <figure ng-repeat="item in data track by $index">
 		  	  	    	<img ng-src="{{ item.pic_url||item.picurl||item.pgpicurl||item.r2}}" />
 		  	  	    	 <figcaption>
@@ -53,12 +57,12 @@
 		  	  	    	 </figcaption>
 		  	  	    </figure>
 		  	  	    <div id="main1_1">
-		  	  	    	<span>118 - 22.56 = ￥176.88</span>
+		  	  	    	<!--<span>118 - 22.56 = ￥176.88</span>-->
 		  	  	    </div>
 		  	 
 		  </div>
 		  <div id="footer">
-            <p id="p2">————以下商品已过期，需要重新加入才能购买————</p>
+            <!--<p id="p2">————以下商品已过期，需要重新加入才能购买————</p>-->
             
             <figure ng-repeat="items in dataArr track by $index">
 		  	  	    	<img ng-src="{{items.pic_url || items.picurl || items.pgpicurl || items.r2}}" />

@@ -1,7 +1,10 @@
 body{
 	background-color: #f7f7f7;
 }
-
+.cart{
+	height: 14rem;
+	overflow-y: scroll;
+}
 #header2{
 	height: 1.34375rem;
 	line-height: 1.34375rem;
@@ -166,8 +169,8 @@ body{
 	width: 1.3125rem;
 	height: 0.46875rem;
 	line-height: 0.46875rem;
-	border: 1px solid red;
-	color: red;
+/*	border: 1px solid red;*/
+/*	color: red;*/
 	font-size: 0.375rem;
 }
 #p1 span:last-of-type{
@@ -196,8 +199,14 @@ body{
 	margin-bottom: 0.125rem;
 }
 #main1 figcaption p:first-of-type span:first-of-type{
+	width: 3.125rem;
 	font-size: 0.4375rem;
-	margin-right: 1.595rem;
+	/*margin-right: 1.595rem;*/
+}
+
+#main1 figcaption p:first-of-type span:nth-of-type(2){
+	float: right;
+	margin-right: 0.71875rem;
 }
 
 #main1 figcaption p:nth-of-type(2) span{
@@ -212,6 +221,8 @@ body{
 #main1 figcaption p:last-of-type span:first-of-type{
 	float: left;
 	height: 0.71875rem;
+	text-align: center;
+	line-height: 0.71875rem;
 	width: 0.71875rem;
 	background-color: #f7f7f7;
 }
@@ -225,6 +236,8 @@ body{
 #main1 figcaption p:last-of-type span:nth-of-type(3){
 	float: left;
 	height: 0.71875rem;
+	text-align: center;
+	line-height: 0.71875rem;
 	width: 0.71875rem;
 	background-color: #f7f7f7;
 }

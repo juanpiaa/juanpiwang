@@ -162,6 +162,10 @@ var app = angular.module('myApp', ['ui.router', 'angularCSS','me-lazyload'])
 					templateUrl : './mine/mine.html',
 					controller : 'MineCtrl as mineCtrl'
 				})
-			
+			    .state('search', {
+					url : './cart',
+					templateUrl : './cart/search.html',
+					controller : 'SearchCtrl as searCtrl'
+				})
 		}])
 	
