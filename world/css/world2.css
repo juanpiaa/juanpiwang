@@ -1,0 +1,89 @@
+*{
+	background: rgb(213,94,189);
+}
+.banner{
+	width: 10rem;
+	height: 6.09375rem;
+	
+}
+.banner img{
+	width: 10rem;
+	height: 6.09375rem;
+}
+.nav ul li{
+	width: 3.328125rem;
+	height: 1.0625rem;
+	float: left;
+	background: #823bdf;
+	
+}
+.kaituan{
+	width: 45%;
+	float: left;
+	margin: 0.203125rem;
+	
+}
+.Kaimg{
+	width: 4.640625rem;
+	height: 4.640625rem;
+}
+.Kaimg img{
+	width: 4.640625rem;
+	height: 4.640625rem;
+}
+.title{
+	text-align: center;
+	color: #222;
+	width: 4.640625rem;
+	height: 0.71875rem;
+	font-size: 0.4rem;
+	background: white;
+}
+.many{
+	text-align: center;
+	width: 4.640625rem;
+	height: 1rem;
+	background: white;
+}
+.span1{
+	width: 2.015625rem;
+	height: 0.6125rem;
+	font-size: 0.1875rem;
+	color: red;
+	background: white;
+}
+.span2{
+	width: 1.059375rem;
+	height: 0.5625rem;
+	font-size: 0.46875rem;
+	color: red;
+	font-weight: bold;
+	background: white;
+}
+.span3{
+	width: 0.875rem;
+	height:  0.5625rem;
+	color: #666666;
+	text-decoration: line-through;
+	background: white;
+}
+.mashang{
+	width: 4.640625rem;
+	height: 0.625rem;
+	background: white;
+}
+.ms{
+	width: 4.140625rem;
+	height: 0.625rem;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	margin-left: 0.15625rem;
+	color: white;
+	background: red;
+	margin-bottom: 0.3125rem;
+}
+
+.lis{
+	background: #cf7ff4;
+}

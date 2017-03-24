@@ -1,0 +1,161 @@
+@charset "utf-8";
+* {
+  box-sizing: border-box;
+  font-family: PingFang-SC-Regular, Helvetica Neue, Helvetica, Droid Sans Fallback, microsoft yahei, sans-serif;
+}
+button {
+  border: 0;
+}
+.pintuan .down_pic {
+  width: 10rem;
+  height: 1.5rem;
+}
+.pintuan .down_pic img {
+  width: 100%;
+}
+.pintuan .header {
+  width: 10rem;
+  height: 1.40625rem;
+  background: transparent;
+  border-bottom: 0.03125rem solid #ededed;
+  color: #ff4955;
+  display: flex;
+  align-items: center;
+}
+.pintuan .header h1 {
+  margin-left: 4.25rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+.pintuan .header img {
+  width: 0.75rem;
+  margin: 0 0.375rem 0 3.125rem;
+}
+.pintuan .nav {
+  width: 10rem;
+  height: 1.1875rem;
+  background: transparent;
+  overflow-x: scroll;
+}
+.pintuan .nav ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.pintuan .nav ul li {
+  height: 100%;
+}
+.pintuan .nav ul li a {
+  display: inline-block;
+  width: 1.1875rem;
+  text-align: center;
+  margin: 0 0.3125rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.425rem;
+  color: #4a4a4a;
+}
+.pintuan .nav ul li .jjsm {
+  width: 2.0625rem;
+}
+.pintuan .nav ul li .active {
+  color: #ff464e;
+  border-bottom: 0.0625rem solid #ff464e;
+}
+.pintuan .banner {
+  width: 10rem;
+  height: 3.8125rem;
+}
+.pintuan .banner img {
+  width: 100%;
+  height: 100%;
+}
+.pintuan .ad_bar {
+  height: 2.875rem;
+  border-bottom: 0.28125rem solid #f7f7f7;
+}
+.pintuan .ad_bar ul {
+  height: 100%;
+  display: flex;
+}
+.pintuan .ad_bar ul li {
+  width: 20%;
+  text-align: center;
+  margin-top: 0.28125rem;
+}
+.pintuan .ad_bar a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.pintuan .ad_bar img {
+  height: 1.25rem;
+  margin-bottom: 0.15625rem;
+}
+.pintuan .ad_bar p {
+  color: #666666;
+}
+.pintuan .food_item {
+  height: 3.875rem;
+  border-top: 0.03125rem solid #f1fce5;
+  border-bottom: 0.03125rem solid #f1fce5;
+}
+.pintuan .food_item ul {
+  height: 100%;
+  display: flex;
+}
+.pintuan .food_item ul li {
+  flex: 1;
+}
+.pintuan .food_item ul li img {
+  width: 100%;
+}
+.pintuan .food_item ul li + li {
+  border-left: 0.03125rem solid #f2f2f2;
+}
+.pintuan .products_item .products_item_pic {
+  width: 10rem;
+  height: 4.65625rem;
+  border-bottom: 0.03125rem solid #c5f3b5;
+}
+.pintuan .products_item .products_item_pic img {
+  width: 100%;
+  height: 100%;
+}
+.pintuan .products_item .products_info {
+  padding: 0 0.25rem;
+  height: 2.75rem;
+  border-bottom: 0.21875rem solid #f4f4f8;
+}
+.pintuan .products_item .products_info h3 {
+  margin: 0.3125rem 0;
+  color: #4a4a4a;
+}
+.pintuan .products_item .products_info .team {
+  font-size: 0.34375rem;
+  -webkit-transform: scale(0.8);
+  display: inline-block;
+}
+.pintuan .products_item .products_info .new_price {
+  color: #ff464e;
+  font-size: 0.46875rem;
+}
+.pintuan .products_item .products_info .old_price {
+  color: #bcbcbc;
+  font-size: 0.28125rem;
+  -webkit-transform: scale(0.8);
+  display: inline-block;
+}
+.pintuan .products_item .products_info button {
+  float: right;
+  width: 2.4375rem;
+  height: 1.0rem;
+  background: #ff464e;
+  z-index: 99;
+  font-size: 0.46875rem;
+  color: white;
+  text-align: center;
+  line-height: 1rem;
+}

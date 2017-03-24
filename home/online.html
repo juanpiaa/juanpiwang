@@ -1,0 +1,68 @@
+
+<div class="online">
+    <div class="header">
+        <a href="javascript:window.history.back()">
+            <img src="./home/img/btn-back.png" alt="" />
+        </a>
+        <span>即将上线</span>
+    </div>
+    <div class="goods_list">
+        <ul>
+            <li ng-repeat="item in data">
+                <a ui-sref="substr" ng-click="addGoods()">
+                    <img lazy-src="{{item.pic_url}}" alt="" />
+                </a>
+                <div class="goods_info">
+                    <span class="price_info">{{item.oprice}}</span>
+                    <span class="time_info">{{item.time_left}}</span>
+                    <h3>{{item.title}}</h3>
+                    <span class='goods_icon'></span>
+                </div>
+            </li>
+           <!--  <li>
+                <a href="###">
+                    <img src="./home/img/58c510f4a43d1f0e53533ff4_800x800.jpg" alt="" />
+                    <div class="goods_info">
+                        <span class="price_info">满2件减12元</span>
+                        <span class="time_info">上新</span>
+                        <h3>淑女丽丝</h3>
+                        <span class='goods_icon'></span>
+                    </div>
+                 </a>
+            </li>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58c510f4a43d1f0e53533ff4_800x800.jpg" alt="" />
+                    <div class="goods_info">
+                        <span class="price_info">满2件减12元</span>
+                        <span class="time_info">上新</span>
+                        <h3>淑女丽丝</h3>
+                        <span class='goods_icon'></span>
+                    </div>
+                 </a>
+            </li>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58c510f4a43d1f0e53533ff4_800x800.jpg" alt="" />
+                    <div class="goods_info">
+                        <span class="price_info">满2件减12元</span>
+                        <span class="time_info">上新</span>
+                        <h3>淑女丽丝</h3>
+                        <span class='goods_icon'></span>
+                    </div>
+                 </a>
+            </li>
+            <li>
+                <a href="###">
+                    <img src="./home/img/58c510f4a43d1f0e53533ff4_800x800.jpg" alt="" />
+                    <div class="goods_info">
+                        <span class="price_info">满2件减12元</span>
+                        <span class="time_info">上新</span>
+                        <h3>淑女丽丝</h3>
+                        <span class='goods_icon'></span>
+                    </div>
+                 </a>
+            </li> -->
+        </ul>
+    </div>
+</div>

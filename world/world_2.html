@@ -1,0 +1,39 @@
+<link rel="stylesheet" type="text/css" href="world/css/world2.css"/>
+<link rel="stylesheet" href="css/index.css" />
+<link rel="stylesheet" href="css/reset.css" />
+<div class="world_2">
+	<div class="banner">
+		<img src="world/img/world2_img1.png"/>
+	</div>
+	<div class="nav">
+		<ul>
+			<li >日用百货</li>
+			<li >家纺布艺</li>
+			<li >家装家居</li>
+		</ul>
+	</div>
+	<div class="main">
+		<ul>
+			<li class="kaituan" ng-repeat=" item in worldtowCtrl.suju">
+				<a ng-click="addGoods()">
+					<div class="Kaimg">
+						<img lazy-src="{{ item.r2}}" />
+					</div>
+					<div class="title">
+						{{ item.q}}
+					</div>
+					<div class="many">
+						<span class="span1">&nbsp;&nbsp;拼团价:</span>
+						<span class="span2">￥{{ item.h}}</span>
+						<span class="span3">￥{{ item.i}}</span>
+					</div>
+					<div class="mashang">
+						<span class="ms">
+							马上开团
+						</span>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>

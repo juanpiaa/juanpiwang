@@ -1,0 +1,104 @@
+<link rel="stylesheet" href="./straight/css/substr.css" />
+<link rel="stylesheet" href="./straight/css/shop.css">
+
+<div class="shop">
+	<div class="top">
+		<img  onclick="window.history.back()"  src="./straight/img/back_arrow.jpg" alt="">
+		<span>genaduo女神专场特卖折扣</span>
+		<img src="./straight/img/more.png" alt="">
+	</div>
+	<div class="main">
+		<div class="main_top">
+			<img class="img1" src="./straight/img/brand.png" alt="">
+			<!--改动添加了地图功能-->
+			<div >
+				<p>sprite小店</p>
+				<p id="main_dt"><a href="">店铺地址</a></p>
+			</div>
+			<figure>
+				<img class="img2" src="./straight/img/collect.png" alt="">
+				<figcaption>
+					<p>收藏店铺</p>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="main_center">
+			<p>
+				<span>满赠</span>
+				满1元即赠69元优惠券，限赠一次
+			</p>
+			<p>
+				<span>满件减</span>
+				满2件减10元，满3件减15元
+			</p>
+		</div>
+	</div>
+	<div id="container"></div>
+	<ul class="rank_list">
+		<li>综合</li>
+		<li>人气</li>
+		<li>销量</li>
+		<li>仅看有货</li>
+	</ul>
+</div>
+<div class="sub01">
+	<ul>
+		<li ng-repeat="item in data">
+			<a ui-sref="substr" ng-click="showGoods()">
+				<figure>
+					<img src="{{ item.pic_url }}" />
+					<figcaption>
+						<div>
+							<h3>￥{{ item.cprice }}<s>￥{{ item.oprice }}</s></h3>
+							<p>上新</p>
+						</div>
+						<div class="info">
+							<span>直发</span>
+							<p>{{ item.title }}</p>
+						</div>
+					</figcaption>
+				</figure>
+			</a>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=f914be0b8e1421f7c9848a958504369c"></script>
+<script type="text/javascript">
+		var a =true;
+	$("#main_dt").on('click',function (){
+		if(a){
+			a=!a;
+			$('#container').css("display","block");
+		}else{
+			a=!a;
+			$('#container').css("display","none");
+		}
+		
+	})
+
+</script>
+<script type="text/javascript">
+			// 创建地图
+//			var map = new AMap.Map('container');	
+			//创建的时候并且初始化一些 属性设置（属性的具体含义，使用的时候看API）
+			var map = new AMap.Map('container',{
+			    zoom: 12,
+			    center: [116.352909,40.068538]//new AMap.LngLat(116.39,39.9)116.352909,40.068538
+			});
+			
+			//创建标记
+			var marker = new AMap.Marker({
+//				map.setZoom(50);
+			    position: [116.34614825,40.06324371],//marker所在的位置116.34614825； 纬度：40.06324371
+			    map:map,//创建时直接赋予map属性
+			     
+			});
+			marker.setLabel({  
+                offset: new AMap.Pixel(15, 15),  
+                content: "sprite小店"  
+           }); 
+			//也可以在创建完成后通过setMap方法执行地图对象
+//			marker.setMap(map);
+		</script>	
+	
+	

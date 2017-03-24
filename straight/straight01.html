@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="./straight/css/substr.css" />
+<div class="sub01">
+	<ul>
+		<li>
+			<a ui-sref="shop">
+				<figure>
+					<img src="./straight/img/58c63a8aad0a49bb258b4599_800x800.png" />
+					<figcaption>
+						<div>
+							<h3>￥14.9<s>￥12.9</s></h3>
+							<p>上新</p>
+						</div>
+						<div class="info">
+							<span>直发</span>
+							<p>啊实打实的考虑离开</p>
+						</div>
+					</figcaption>
+				</figure>
+			</a>
+		</li>
+		<li>
+			<a ui-sref="shop">
+				<figure>
+					<img src="./straight/img/58c63a8aad0a49bb258b4599_800x800.png" />
+					<figcaption>
+						<div>
+							<h3>￥14.9<s>￥12.9</s></h3>
+							<p>上新</p>
+						</div>
+						<div class="info">
+							<span>直发</span>
+							<p>啊实打实的考虑离开</p>
+						</div>
+					</figcaption>
+				</figure>
+			</a>
+		</li>
+		<li ng-repeat="item in data">
+			<a ng-click="showGoods()">
+				<figure>
+					<img lazy-src="{{ item.pic_url }}" />
+					<figcaption>
+						<div>
+							<h3>￥{{ item.cprice }}<s>￥{{ item.oprice }}</s></h3>
+							<p>上新</p>
+						</div>
+						<div class="info">
+							<span>直发</span>
+							<p>{{ item.title }}</p>
+						</div>
+					</figcaption>
+				</figure>
+			</a>
+		</li>
+	</ul>
+</div>

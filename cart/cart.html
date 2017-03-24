@@ -1,0 +1,86 @@
+<div class="cart">
+
+	<header id="header2">
+		<span>购物车</span>
+	</header>
+	
+   <div id="first">
+   	
+		<div id="main">
+			<div id="main_1">
+				<img src="cart/img/empty-cart.png" />
+			</div>
+			<div id="main_2">
+				<p>购物车还是空荡荡的</p>
+				<span>快去挑选商品吧</span>
+			</div>
+			<input type="button" value="今日特卖" />
+		</div>
+		<div id="footer">
+            <p id="p2">————以下商品已过期，需要重新加入才能购买————</p>
+            
+            <figure ng-repeat="items in dataArr track by $index">
+		  	  	    	<img ng-src="{{items.r2||items.pic_url||items.picurl||items.pgpicurl }}" />
+		  	  	    	 <figcaption>
+		  	  	    	 	 <p><span>{{items.title || items.q}}</span><span>￥{{items.cprice || items.h}}</span></p>
+		  	  	    	 	 
+		  	  	    	 	 <p><span>S</span><span>杏色</span><span>￥{{items.oprice || items.i}}</span></p>
+		  	  	    	 	 
+		  	  	    	 	 <p><span ng-click="aginAdd()">重新加入</span><span ng-click="delectArr()">×</span></p>
+		  	  	    	 </figcaption>
+		   </figure>
+		   
+		</div>
+		
+	</div>
+	
+	
+	<div id="second">
+		
+		  <div id="time"><span>请在(11:23)内完成付款，超时订单将自动取消</span></div>   
+		  
+		  <div id="main1">
+		  	 
+		  	  	  <p id="p1"><span>满减折</span><span>已满1件，已享8.8折 再凑一件 水水水水</span></p> 
+		  	  	    <figure ng-repeat="item in data track by $index">
+		  	  	    	<img ng-src="{{ item.pic_url||item.picurl||item.pgpicurl||item.r2}}" />
+		  	  	    	 <figcaption>
+		  	  	    	 	 <p><span>{{item.title || item.q}}</span><span>￥{{item.cprice || item.h}}</span></p>
+		  	  	    	 	 
+		  	  	    	 	 <p><span>S</span><span>杏色</span><span>￥{{item.oprice || item.i}}</span></p>
+		  	  	    	 	 
+		  	  	    	 	 <p><span ng-click="add()">+</span><span>{{item.count}}</span><span ng-click="jian()">-</span><span ng-click="delect()">×</span></p>
+		  	  	    	 </figcaption>
+		  	  	    </figure>
+		  	  	    <div id="main1_1">
+		  	  	    	<span>118 - 22.56 = ￥176.88</span>
+		  	  	    </div>
+		  	 
+		  </div>
+		  <div id="footer">
+            <p id="p2">————以下商品已过期，需要重新加入才能购买————</p>
+            
+            <figure ng-repeat="items in dataArr track by $index">
+		  	  	    	<img ng-src="{{items.pic_url || items.picurl || items.pgpicurl || items.r2}}" />
+		  	  	    	 <figcaption>
+		  	  	    	 	 <p><span>{{items.title}}</span><span>￥{{items.cprice}}</span></p>
+		  	  	    	 	 
+		  	  	    	 	 <p><span>S</span><span>杏色</span><span>￥{{items.oprice}}</span></p>
+		  	  	    	 	 
+		  	  	    	 	 <p><span ng-click="aginAdd()">重新加入</span><span ng-click="delectArr()">×</span></p>
+		  	  	    	 </figcaption>
+		   </figure>
+		   
+		</div>
+		   <div id="footer1">
+		  	  	  <p><span>总金额</span><span ng-model="zj">￥{{ zj }}</span><span>(医生$2323)</span></p>
+		  	  	  <p><span>去结算</span></p>
+		   </div>
+		   
+		   
+		    
+	</div>
+	
+
+
+</div>
