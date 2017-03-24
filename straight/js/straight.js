@@ -35,7 +35,7 @@ app.controller('StrCtrl', ['$css', 'strSer', 'strFac','$scope', '$rootScope', '$
 		}
 		var obj = JSON.parse($stateParams.id);
 		$scope.datas = obj;
-		console.log($scope.datas);
+		
 		obj.count = 1;
 		var img;
 		var flyer;

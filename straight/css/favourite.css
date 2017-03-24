@@ -14,11 +14,13 @@
   width: 100%;
 }
 .favourite .good_cate ul {
+	
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 .favourite .good_cate ul li {
-  width: 50%;
+  width: 48%;
 }
 .favourite .good_cate ul li img {
   width: 4.96875rem;

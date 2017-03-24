@@ -38,7 +38,7 @@
 		<li ng-repeat="item in data_two">
 			<a ng-click="showGoods()">
 				<figure>
-					<img lazy-src="{{ item.pic_url }}" />
+					<img lazy-src="{{ item.pic_url || item.picurl || item.pgpicurl ||item.r2 }}" />
 					<figcaption>
 						<div>
 							<h3>￥{{ item.cprice }}<s>￥{{ item.oprice }}</s></h3>

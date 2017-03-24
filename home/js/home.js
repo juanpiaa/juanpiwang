@@ -3,7 +3,7 @@ app.controller('HomeCtrl', ['$css', 'homeSer', 'homeFac', '$scope', function ($c
         $css.add('./home/css/home.css');
         $css.add('./lib/swiper-3.3.1.min.css');
         homeFac.getData().then(function(res){
-        	// console.log(res)
+        	
                 self.data=res.data.list;
         });
         homeFac.getlunbodata().then(function(res){
@@ -30,7 +30,7 @@ app.controller('HomeCtrl', ['$css', 'homeSer', 'homeFac', '$scope', function ($c
         $css.add('./home/css/nvzhuang.css');
         nzFac.getnzData().then(function(res){
                 self.data=res.data.list;
-                 console.log(res)
+                
         });
         nzFac.getnzlunbodata().then(function(res){
                 self.dswiper=res.data.data.banner_ads;
@@ -79,7 +79,6 @@ app.controller('HomeCtrl', ['$css', 'homeSer', 'homeFac', '$scope', function ($c
                 
             })
                 pintuanFac.getptlunbodata().then(function(res){
-//              	console.log(res.data.data.banner_ads)
                         $scope.dswiper=res.data.data.banner_ads;
                         pintuanSer.lunbo();
                    

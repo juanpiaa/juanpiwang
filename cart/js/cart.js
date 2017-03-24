@@ -9,7 +9,6 @@ app.controller('CartCtrl', ['$css', 'cartSer', 'cartFac','$scope', function ($cs
 		 $scope.data = cartSer.showAllgoods();
 		
 		 js();
-          console.log($scope.data);
 		 if($scope.data.length == 0){
 		 	    first.style.display = "block";
 		 	    second.style.display = "none";

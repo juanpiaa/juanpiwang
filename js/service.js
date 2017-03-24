@@ -90,7 +90,6 @@ angular.module('myApp')
 			if(arr.length == 0)
 			{
 				arr.push(obj);
-				console.log(1);
 				return;
 			}
 			else

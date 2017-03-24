@@ -35,13 +35,12 @@
   overflow-x: scroll;
 }
 .home .nav ul {
+	width: 18rem;
   display: flex;
   align-items: center;
   height: 100%;
 }
-.home .nav ul li {
-  height: 100%;
-}
+
 .home .nav ul li a {
   display: inline-block;
   width: 1.1875rem;
@@ -55,7 +54,7 @@
   color: #4a4a4a;
   padding: 0.205rem 0.15625rem 0.225rem  0.15625rem;
 }
-.home .nav ul li .jjsm {
+.home .nav ul li:nth-of-type(5) a {
   width: 2.0625rem;
 }
 .home .nav ul li .active {

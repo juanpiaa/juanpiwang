@@ -10,7 +10,7 @@ app.controller('WorldCtrl', ['$css', 'worldSer', 'worldFac', "$scope", 'strSer',
 		});
 		worldFac.getlunbodata().then(function(res){
                 self.dswiper=res.data.data.banner_ads;
-                console.log( self.dswiper);
+                
                 worldSer.lunbo();
         });
 		
@@ -32,7 +32,7 @@ app.controller('WorldCtrl', ['$css', 'worldSer', 'worldFac', "$scope", 'strSer',
 	
 	$scope.f1 = function () {
 	  var Y =	$('.baihuo').offset().top;
-	  console.log(Y)
+	  
 	  $(document).scrollTop(Y-35);
 	}
 	$scope.f2 = function () {
@@ -41,11 +41,17 @@ app.controller('WorldCtrl', ['$css', 'worldSer', 'worldFac', "$scope", 'strSer',
 	}
 	$scope.f3 = function () {
 	  var Z =	$('.jiaju').offset().top;
-	  console.log(Z);
+	 
 	  $(document).scrollTop(Z-35);
 	}
 	$(document).on('scroll',function () { 
-		if( $('.nav').offset().top < $(document).scrollTop()){
+		try{
+			var ZZ = $('.nav').offset().top
+		}catch(e){
+			console.log('大家好');
+		}
+		
+		if( ZZ < $(document).scrollTop()){
 			$('.nav').addClass('fudong');
 		}
 		if( $(document).scrollTop() < 195){

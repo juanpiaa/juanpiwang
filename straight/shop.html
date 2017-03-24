@@ -16,7 +16,7 @@
 				<p id="main_dt"><a href="">店铺地址</a></p>
 			</div>
 			<figure>
-				<img class="img2" src="./straight/img/collect.png" alt="">
+				<img class="img2" src="./comimg/collect.png" alt="">
 				<figcaption>
 					<p>收藏店铺</p>
 				</figcaption>
@@ -44,9 +44,9 @@
 <div class="sub01">
 	<ul>
 		<li ng-repeat="item in data">
-			<a ui-sref="substr" ng-click="showGoods()">
+			<a  ng-click="showGoods()">
 				<figure>
-					<img src="{{ item.pic_url }}" />
+					<img ng-src="{{ item.pic_url || item.picurl || item.pgpicurl ||item.r2 }}" />
 					<figcaption>
 						<div>
 							<h3>￥{{ item.cprice }}<s>￥{{ item.oprice }}</s></h3>
@@ -62,7 +62,6 @@
 		</li>
 	</ul>
 </div>
-<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=f914be0b8e1421f7c9848a958504369c"></script>
 <script type="text/javascript">
 		var a =true;
 	$("#main_dt").on('click',function (){

@@ -19,7 +19,7 @@ button{
 }
 .detail .small_pic .float_layer { width: 50px; height: 50px; border: 1px solid #000; background: #fff; filter: alpha(opacity: 30); opacity: 0.3; position: absolute; top: 0; left: 0; display:none; }
 .detail .small_pic .mark {width:100%; height: 100%; position:absolute; z-index:99; left:0px; top:0px; background:red; filter:alpha(opacity:0); opacity:0;}
-.detail .big_pic { position: absolute; top:10rem; left: 2rem; width:3.030303rem; height:3.030303rem; overflow:hidden; border:0.030303rem solid #CCC; display:none; }
+.detail .big_pic { position: absolute; top:10rem; left: 5rem; width:3.030303rem; height:3.030303rem; overflow:hidden; border:0.030303rem solid #CCC; display:none; }
 .detail .big_pic img { position:absolute; top: -0.151515rem; left: -0.30303rem; }
 
 .detail .main .small_pic img{
@@ -31,6 +31,7 @@ button{
 	top: 0.454545rem;
 	left: 0.454545rem;
 	position: absolute;
+	z-index: 999;
 }
 .detail .main h2{
 	margin-left: 0.363636rem;
