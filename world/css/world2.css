@@ -1,6 +1,4 @@
-*{
-	background: rgb(213,94,189);
-}
+
 .banner{
 	width: 10rem;
 	height: 6.09375rem;
@@ -15,7 +13,9 @@
 	height: 1.0625rem;
 	float: left;
 	background: #823bdf;
-	
+	text-align: center;
+	line-height: 1.0625rem;
+	color: white;
 }
 .kaituan{
 	width: 45%;
@@ -71,6 +71,7 @@
 	width: 4.640625rem;
 	height: 0.625rem;
 	background: white;
+	padding-bottom: 0.15625rem;
 }
 .ms{
 	width: 4.140625rem;
@@ -83,7 +84,46 @@
 	background: red;
 	margin-bottom: 0.3125rem;
 }
-
-.lis{
-	background: #cf7ff4;
+.nav{
+	height: 1.09375rem;
+}
+.baihuo{
+	width: 10rem;
+	height: 1.203125rem;
+}
+.baihuo img{
+	width: 10rem;
+	height: 1.203125rem;
+}
+.buyi{
+	width: 10rem;
+	height: 1.203125rem;
+}
+.buyi img{
+	width: 10rem;
+	height: 1.203125rem;
+}
+.jiaju{
+	width: 10rem;
+	height: 1.203125rem;
+}
+.jiaju img{
+	width: 10rem;
+	height: 1.203125rem;
+}
+.view {
+    background: #cf7ff4;
+}
+.main{
+	overflow: auto;
+}
+.fudong{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.fudong2{
+	position: fixed;
+	top: 195;
+	left: 0;
 }

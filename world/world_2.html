@@ -7,15 +7,72 @@
 	</div>
 	<div class="nav">
 		<ul>
-			<li >日用百货</li>
-			<li >家纺布艺</li>
-			<li >家装家居</li>
+			<li ng-click="f1()">日用百货</li>
+			<li ng-click="f2()">家纺布艺</li>
+			<li ng-click="f3()">家装家居</li>
 		</ul>
+	</div>
+	<div class="baihuo">
+		<img src="world/img/baihuo.png"/>
 	</div>
 	<div class="main">
 		<ul>
 			<li class="kaituan" ng-repeat=" item in worldtowCtrl.suju">
-				<a ng-click="addGoods()">
+				<a class="suibian" ng-click="addGoods()">
+					<div class="Kaimg">
+						<img lazy-src="{{ item.r2}}" />
+					</div>
+					<div class="title">
+						{{ item.q}}
+					</div>
+					<div class="many">
+						<span class="span1">&nbsp;&nbsp;拼团价:</span>
+						<span class="span2">￥{{ item.h}}</span>
+						<span class="span3">￥{{ item.i}}</span>
+					</div>
+					<div class="mashang">
+						<span class="ms">
+							马上开团
+						</span>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="buyi">
+		<img src="world/img/buyi.png"/>
+	</div>
+	<div class="main">
+		<ul>
+			<li class="kaituan" ng-repeat=" item in worldtowCtrl.suju">
+				<a class="suibian" ng-click="addGoods()">
+					<div class="Kaimg">
+						<img lazy-src="{{ item.r2}}" />
+					</div>
+					<div class="title">
+						{{ item.q}}
+					</div>
+					<div class="many">
+						<span class="span1">&nbsp;&nbsp;拼团价:</span>
+						<span class="span2">￥{{ item.h}}</span>
+						<span class="span3">￥{{ item.i}}</span>
+					</div>
+					<div class="mashang">
+						<span class="ms">
+							马上开团
+						</span>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="jiaju">
+		<img src="world/img/jiaju.png"/>
+	</div>
+	<div class="main">
+		<ul>
+			<li class="kaituan" ng-repeat=" item in worldtowCtrl.suju">
+				<a class="suibian" ng-click="addGoods()">
 					<div class="Kaimg">
 						<img lazy-src="{{ item.r2}}" />
 					</div>

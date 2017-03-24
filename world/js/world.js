@@ -25,7 +25,31 @@ app.controller('WorldCtrl', ['$css', 'worldSer', 'worldFac', "$scope", 'strSer',
 			//strSer.addGoods(this.item);
 			$state.go('substr',{id:JSON.stringify(this.item)});
 		}
-//	$('.nav').on('click','li',function(){
-//		
-//	})
+	$('.nav').on('click','li',function(){
+		$('.nav li').css("background",'#823bdf');
+		$(this).css("background",'#cf7ff4');
+	})
+	
+	$scope.f1 = function () {
+	  var Y =	$('.baihuo').offset().top;
+	  console.log(Y)
+	  $(document).scrollTop(Y-35);
+	}
+	$scope.f2 = function () {
+	  var S =	$('.buyi').offset().top;
+	  $(document).scrollTop(S-35);
+	}
+	$scope.f3 = function () {
+	  var Z =	$('.jiaju').offset().top;
+	  console.log(Z);
+	  $(document).scrollTop(Z-35);
+	}
+	$(document).on('scroll',function () { 
+		if( $('.nav').offset().top < $(document).scrollTop()){
+			$('.nav').addClass('fudong');
+		}
+		if( $(document).scrollTop() < 195){
+			$('.nav').removeClass('fudong');
+		}
+	})
 }])

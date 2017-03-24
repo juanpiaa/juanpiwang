@@ -4,7 +4,7 @@ var app = angular.module('myApp', ['ui.router', 'angularCSS','me-lazyload'])
 		
 		$rootScope.$on('$locationChangeSuccess', function () {
 			//如果浏览器地址包含 market（闪送超市）那么就隐藏footer
-			if (($window.location.href.indexOf('advise')!= -1)||($window.location.href.indexOf('substr') != -1)||($window.location.href.indexOf('shoucang') != -1)) {
+			if (($window.location.href.indexOf('advise')!= -1)||($window.location.href.indexOf('substr') != -1)||($window.location.href.indexOf('shoucang') != -1)||($window.location.href.indexOf('world_2') != -1)) {
 				$rootScope.rootIsFooterShow = false;
 			} else {
 				$rootScope.rootIsFooterShow = true;
