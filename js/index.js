@@ -54,11 +54,12 @@ myEvent(window,'load',function(){
 	var scrollTop;
 
 window.onscroll=function(){
-scrollTop = window.pageYOffset 
-|| document.documentElement.scrollTop 
-|| document.body.scrollTop 
-|| 0;
+	scrollTop = window.pageYOffset 
+	|| document.documentElement.scrollTop 
+	|| document.body.scrollTop 
+	|| 0;
 	};
+
 	oRTT.onclick=function(){
 		clearInterval(timer);
 		timer=setInterval(function(){
@@ -73,3 +74,26 @@ scrollTop = window.pageYOffset
 		}, 30);
 	}
 });
+
+
+
+	 $(window).scroll(function(){
+        var sc=$(window).scrollTop();
+		if(sc>45){
+			$(".header").hide();
+			$('.nav').css({
+			    'position' : 'fixed',
+			    'background' : 'white',
+			    'left':0,
+			    'top':0
+			});
+		}else{
+			$(".header").show();
+			$('.nav').css({
+			    'position' : 'static',
+			   
+			});
+		}
+
+
+    });
