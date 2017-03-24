@@ -1,0 +1,129 @@
+
+.banner{
+	width: 10rem;
+	height: 6.09375rem;
+	
+}
+.banner img{
+	width: 10rem;
+	height: 6.09375rem;
+}
+.nav_one ul li{
+	width: 3.328125rem;
+	height: 1.0625rem;
+	float: left;
+	background: #823bdf;
+	text-align: center;
+	line-height: 1.0625rem;
+	color: white;
+}
+.kaituan{
+	width: 45%;
+	float: left;
+	margin: 0.203125rem;
+	
+}
+.Kaimg{
+	width: 4.640625rem;
+	height: 4.640625rem;
+}
+.Kaimg img{
+	width: 4.640625rem;
+	height: 4.640625rem;
+}
+.title{
+	text-align: center;
+	color: #222;
+	width: 4.640625rem;
+	height: 0.71875rem;
+	font-size: 0.4rem;
+	background: white;
+}
+.many{
+	text-align: center;
+	width: 4.640625rem;
+	height: 1rem;
+	background: white;
+}
+.span1{
+	width: 2.015625rem;
+	height: 0.6125rem;
+	font-size: 0.1875rem;
+	color: red;
+	background: white;
+}
+.span2{
+	width: 1.059375rem;
+	height: 0.5625rem;
+	font-size: 0.46875rem;
+	color: red;
+	font-weight: bold;
+	background: white;
+}
+.span3{
+	width: 0.875rem;
+	height:  0.5625rem;
+	color: #666666;
+	text-decoration: line-through;
+	background: white;
+}
+.mashang{
+	width: 4.640625rem;
+	height: 0.625rem;
+	background: white;
+	padding-bottom: 0.15625rem;
+}
+.ms{
+	width: 4.140625rem;
+	height: 0.625rem;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	margin-left: 0.15625rem;
+	color: white;
+	background: red;
+	margin-bottom: 0.3125rem;
+}
+.nav{
+	height: 1.09375rem;
+}
+.baihuo{
+	width: 10rem;
+	height: 1.203125rem;
+}
+.baihuo img{
+	width: 10rem;
+	height: 1.203125rem;
+}
+.buyi{
+	width: 10rem;
+	height: 1.203125rem;
+}
+.buyi img{
+	width: 10rem;
+	height: 1.203125rem;
+}
+.jiaju{
+	width: 10rem;
+	height: 1.203125rem;
+}
+.jiaju img{
+	width: 10rem;
+	height: 1.203125rem;
+}
+.view {
+    background: #cf7ff4;
+}
+.main{
+	overflow: auto;
+}
+.fudong{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.fudong2{
+	position: fixed;
+	top: 195;
+	left: 0;
+}
