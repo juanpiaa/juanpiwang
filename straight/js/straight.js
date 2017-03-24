@@ -17,6 +17,7 @@ app.controller('StrCtrl', ['$css', 'strSer', 'strFac','$scope', '$rootScope', '$
 			//strSer.addGoods(this.item);
 			$state.go('substr',{id:JSON.stringify(this.item)});
 		}
+		strSer.remove();
 		
 	}])
 	.controller('ShopCtrl', ['strSer', '$scope', '$location', 'cartSer', '$http', '$state', function(strSer,$scope, $location,cartSer,$http,$state){

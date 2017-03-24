@@ -63,7 +63,12 @@ angular.module('myApp')
 	}])
 	
 	.service('strSer', [function () {
-		
+		this.remove =  function (){
+			$(document).on("click",".nav a",function(){
+				$('.nav a').removeClass();
+				$(this).toggleClass("active");
+			});
+		}
 	}])
 	
 	.service('worldSer', [function () {
