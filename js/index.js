@@ -18,28 +18,7 @@
 //    });
 //
 
-
-
-//$(function(){	
-//
-//	$(window).scroll(function() {		
-//
-//		if($(window).scrollTop() >= 100){
-//
-//			$('#back').fadeIn(300); 
-//
-//		}
-//
-//	});
-//
-//	$('#back').click(function(){
-//		console.log(this)
-//		console.log(document.body.scrollTop)
-//
-//	$('html,body').animate({scrollTop: '0px'}, 800);});	
-//
-//});
-
+//返回顶部
 function myEvent(obj,ev,fn){
 	if(obj.attachEvent){
 		obj.attachEvent('on'+ev,fn);
@@ -76,24 +55,53 @@ window.onscroll=function(){
 });
 
 
-
-	 $(window).scroll(function(){
+//头部样式
+ $(window).scroll(function(){
         var sc=$(window).scrollTop();
-		if(sc>45){
-			$(".header").hide();
-			$('.nav').css({
-			    'position' : 'fixed',
-			    'background' : 'white',
-			    'left':0,
-			    'top':0
-			});
-		}else{
-			$(".header").show();
-			$('.nav').css({
-			    'position' : 'static',
-			   
-			});
-		}
+	if(sc>45){
+		$(".header").hide();
+		$('.nav').css({
+		    'position' : 'fixed',
+		    'background' : 'white',
+		    'left':0,
+		    'top':0
+		});
+	}else{
+		$(".header").show();
+		$('.nav').css({
+		    'position' : 'static',
+		   
+		});
+	}
+  });
+//底部图片切换
+ 	function picInit(){
+ 		$(".one").attr("src","comimg/0.png");
+ 		$(".two").attr("src","comimg/1.png");
+ 		$(".three").attr("src","comimg/2.png");
+ 		$(".four").attr("src","comimg/3.png");
+ 		$(".five").attr("src","comimg/4.png");
+ 	}
+	$(".footer .first").click(function(){
+	   picInit();
+	   $(".one").attr("src","comimg/00.png");
+	});
+	$(".footer .two").click(function(){
+	   picInit();
+	   $(".two").attr("src","comimg/11.png");
+	});
 
+	$(".footer .three").click(function(){
+	   picInit();
+	   $(".three").attr("src","comimg/22.png");
+	});
 
-    });
+	$(".footer .four").click(function(){
+	   picInit();
+	   $(".four").attr("src","comimg/33.png");
+	});
+
+	$(".footer .five").click(function(){
+	   picInit();
+	   $(".five").attr("src","comimg/44.png");
+	});
